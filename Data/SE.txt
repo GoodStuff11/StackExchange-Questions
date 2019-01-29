@@ -1,5 +1,3 @@
-https://stackexchange.com
-https://meta.stackexchange.com
 https://stackoverflow.com
 https://serverfault.com
 https://superuser.com
