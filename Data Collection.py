@@ -9,11 +9,12 @@ def RepresentsInt(s):
     except ValueError:
         return False
 
-
+sep = '|   |'
 file = open('Data/SE Questions.txt', 'w+', encoding='utf-8')
-file.write('SE;link;title;votes\n')
+file.write('SE'+sep+'link'+sep+'title'+sep+'votes\n')
 with open('Data/SE.txt', 'r') as SEfile:
     links = SEfile.readlines()
+
 
 for n, url in enumerate(links[:20]):
     votes_list = []
@@ -47,6 +48,6 @@ for n, url in enumerate(links[:20]):
             len(title_list)) + ',' + str(len(url_list))
     # add to file
     for j in range(len(url_list)):
-        file.write(title + ';' + url_list[j] + ';' + title_list[j] + ';' + votes_list[j] + '\n')
+        file.write(title + sep + url_list[j] + sep + title_list[j] + sep + votes_list[j] + '\n')
 
 file.close()
