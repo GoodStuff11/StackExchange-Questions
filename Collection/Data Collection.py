@@ -10,9 +10,9 @@ def RepresentsInt(s):
         return False
 
 sep = '|   |'
-file = open('Data/SE Questions.txt', 'w+', encoding='utf-8')
+file = open('../Data/SE Questions.txt', 'w+', encoding='utf-8')
 file.write('SE'+sep+'link'+sep+'title'+sep+'votes\n')
-with open('Data/SE.txt', 'r') as SEfile:
+with open('../Data/SE.txt', 'r') as SEfile:
     links = SEfile.readlines()
 
 
