@@ -11,7 +11,7 @@ def RepresentsInt(s):
 
 
 sep = '|   |'
-file = open('Data/SE Questions Physics.txt', 'w+', encoding='utf-8')
+file = open('../Data/SE Questions Physics.txt', 'w+', encoding='utf-8')
 file.write('link' + sep + 'title' + sep + 'votes' + sep + 'answers' + sep + 'views' + sep + 'time\n')
 
 url = 'https://physics.stackexchange.com'
